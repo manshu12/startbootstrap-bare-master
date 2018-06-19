@@ -19,7 +19,10 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 -->
     <style>
-      body {
+      html,
+        body {
+            background-image: url(img.jpg);
+            height: 100%;
         padding-top: 10px;
     
       }
@@ -28,6 +31,15 @@
           padding-top: 0px;
         }
       }
+        ul{
+            line-height:30px;
+        }
+        ol{
+            line-height:30px;
+        }
+        p{
+            line-height:25px;
+        }
 
         /*
  * Start Bootstrap - Full Slider (http://startbootstrap.com/)
@@ -35,10 +47,18 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-html,
-body {
-    height: 100%;
-}
+        .bg{
+            
+        
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
 
 .carousel,
 .item,
@@ -76,10 +96,11 @@ footer {
 
   </head>
 
-  <body>
+  <body style="background-color: cyan;" class="bg">
+
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-red bg-dark fixed-top" style="background-color:color:rgb(255 0 0);" >
+    <nav class="navbar navbar-expand-lg navbar-red bg-dark fixed-top" style="background-color: color:rgb(255 0 0); margin-bottom: 0px;margin-top: 0px;" >
       <div class="container">
         <a class="navbar-brand" href="#">My Recipices</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -367,7 +388,7 @@ footer {
       </div>
       <div class="row">
       
-      <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 text-center " id="col2" style="padding:10px ;">
+      <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6 text-center " id="col2" style="padding:10px ;">
              <header id="myCarousel" class="carousel slide" style="margin-left: 25px;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -420,7 +441,7 @@ footer {
     </header>
             
             </div>
-          <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 ">
+          <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6 ">
               
               <b><p>The Most Amazing  <a href="http://acadview-webd-assignment6.surge.sh/#chocolate-cake"> Chocolate-Cake</a> is here. I call this my Matilda Cake because I swear it’s just as good as the cake that Bruce Bogtrotter ate in Matilda. Moist, chocolatey perfection. This is the chocolate cake you’ve been dreaming of!. I have been searching for a great chocolate cake recipe for years. For my 18th birthday, my mom made an amazing chocolate cake. It was perfect. It was everything that a chocolate cake should be. Unfortunately, the recipe didn’t seem to survive past that day. Losing that recipe was a tragedy. It set the bar for chocolate cake in my eyes. It took me almost a decade to recreate that perfect chocolate cake. I tried at least a dozen recipes and none of them lived up to my expectations. Until now</p>
               <p>I have found it. My search has ended. I now have THE recipe. If you have ever seen the movie Matilda you will surely remember the scene where the boy is forced to eat the most delicious looking chocolate cake ever. I feel just like that boy when I eat this cake. It is my Matilda chocolate cake for sure.A classic chocolate cake with chocolate buttercream, The cake my kids want as their birthday cake
@@ -453,7 +474,7 @@ footer {
         <h2 style="background-color: chocolate; text-align:center; border-radius: 10px;">Method of Preparation</h2>
             <b>
            <ol>
-                <li>Preheat your oven to 180ºC/350F/gas 4. Grease 2 x 9” sandwich tins and line the bases.</li>
+                <li>Preheat your oven to 180ºC/350F/gas 4. Grease 2 x 9” sandwich tins and line tshe bases.</li>
                 <li>In a bowl, mix together the flour, 75g of the cocoa, the baking pow</li>
                  <li>Cut 125g of the butter into chunks and place into the bowl of a free standing mixer with a paddle attachment (alternatively, you can use an electric hand whisk and a large mixing bowl). Beat for a couple of minutes until creamy.</li>
                  <li>Add the sugar and beat for a few more minutes until pale. Beat in the eggs, one at a time, then add ½ a tablespoon of the vanilla; scraping the mixture off the sides and bottom.</li>
@@ -472,6 +493,7 @@ footer {
           <h3 style="font-display: swap; font-style:italic;font-weight: 700;">Hope you enjoyed it. You must try this next time with your family if you find this really tasty. So keep smiling and live healthy!! </h3>
         
           </div>
+       
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
